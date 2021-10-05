@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "Sistema6S.Core/1.0.0": {
+        "runtime": {
+          "Sistema6S.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Sistema6S.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
