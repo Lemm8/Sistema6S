@@ -11917,37 +11917,39 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\luism\\.nuget\\packages\\": {}
+    "/home/jorge/.nuget/packages/": {},
+    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\LEMM\\diseno_software\\Sistema6S\\Sistema6S.Api\\Sistema6S.Api.csproj",
+      "projectUniqueName": "/home/jorge/RiderProjects/Sistema6S/sistema6s_backend/Auditorias/Sistema6S/Sistema6S.Api/Sistema6S.Api.csproj",
       "projectName": "Sistema6S.Api",
-      "projectPath": "D:\\LEMM\\diseno_software\\Sistema6S\\Sistema6S.Api\\Sistema6S.Api.csproj",
-      "packagesPath": "C:\\Users\\luism\\.nuget\\packages\\",
-      "outputPath": "D:\\LEMM\\diseno_software\\Sistema6S\\Sistema6S.Api\\obj\\",
+      "projectPath": "/home/jorge/RiderProjects/Sistema6S/sistema6s_backend/Auditorias/Sistema6S/Sistema6S.Api/Sistema6S.Api.csproj",
+      "packagesPath": "/home/jorge/.nuget/packages/",
+      "outputPath": "/home/jorge/RiderProjects/Sistema6S/sistema6s_backend/Auditorias/Sistema6S/Sistema6S.Api/obj/",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\luism\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/jorge/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.1": {
           "targetAlias": "netcoreapp2.1",
           "projectReferences": {
-            "D:\\LEMM\\diseno_software\\Sistema6S\\Sistema6S.Core\\Sistema6S.Core.csproj": {
-              "projectPath": "D:\\LEMM\\diseno_software\\Sistema6S\\Sistema6S.Core\\Sistema6S.Core.csproj"
+            "/home/jorge/RiderProjects/Sistema6S/sistema6s_backend/Auditorias/Sistema6S/Sistema6S.Core/Sistema6S.Core.csproj": {
+              "projectPath": "/home/jorge/RiderProjects/Sistema6S/sistema6s_backend/Auditorias/Sistema6S/Sistema6S.Core/Sistema6S.Core.csproj"
             },
-            "D:\\LEMM\\diseno_software\\Sistema6S\\Sistema6S.Infrastructure\\Sistema6S.Infrastructure.csproj": {
-              "projectPath": "D:\\LEMM\\diseno_software\\Sistema6S\\Sistema6S.Infrastructure\\Sistema6S.Infrastructure.csproj"
+            "/home/jorge/RiderProjects/Sistema6S/sistema6s_backend/Auditorias/Sistema6S/Sistema6S.Infrastructure/Sistema6S.Infrastructure.csproj": {
+              "projectPath": "/home/jorge/RiderProjects/Sistema6S/sistema6s_backend/Auditorias/Sistema6S/Sistema6S.Infrastructure/Sistema6S.Infrastructure.csproj"
             }
           }
         }
@@ -11994,7 +11996,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
       }
     }
   }

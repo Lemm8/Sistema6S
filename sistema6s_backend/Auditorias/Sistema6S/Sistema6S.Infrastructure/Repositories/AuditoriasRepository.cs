@@ -20,7 +20,7 @@ namespace Sistema6S.Infrastructure.Repositories
         public async Task<IEnumerable<Auditorias>> GetAuditorias()
         {
             // CONEXIÓN CON BD Y RETORNAR LISTA ASÍNCRONA
-            var auditorias = await _dbcontext.Auditorias.ToListAsync();
+            var auditorias = await _dbcontext.auditorias_6s.ToListAsync();
             return auditorias;
         }
     }

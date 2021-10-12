@@ -16,11 +16,11 @@ namespace Sistema6S.Infrastructure.Data
         {
         }
 
-        public virtual DbSet<Areas> Areas { get; set; }
-        public virtual DbSet<Auditores> Auditores { get; set; }
-        public virtual DbSet<Auditorias> Auditorias { get; set; }
-        public virtual DbSet<Calificaciones> Calificaciones { get; set; }
-        public virtual DbSet<Departamentos> Departamentos { get; set; }
+        public virtual DbSet<Areas> areas_6s { get; set; }
+        public virtual DbSet<Auditores> auditores_6s  { get; set; }
+        public virtual DbSet<Auditorias> auditorias_6s  { get; set; }
+        public virtual DbSet<Calificaciones> calificaciones_6s  { get; set; }
+        public virtual DbSet<Departamentos> departamentos_6s  { get; set; }
         
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -29,7 +29,7 @@ namespace Sistema6S.Infrastructure.Data
             {
                 entity.HasKey(e => e.AreaId);
 
-                entity.ToTable("areas");
+                entity.ToTable("areas_6s");
 
                 entity.Property(e => e.Nombre)
                     .IsRequired()
@@ -40,7 +40,7 @@ namespace Sistema6S.Infrastructure.Data
             {
                 entity.HasKey(e => e.UserId);
 
-                entity.ToTable("auditores");
+                entity.ToTable("auditores_6s");
 
                 entity.Property(e => e.FechaNacimiento).HasColumnType("datetime");
 
@@ -53,7 +53,7 @@ namespace Sistema6S.Infrastructure.Data
             {
                 entity.HasKey(e => e.AuditoriaId);
 
-                entity.ToTable("auditorias");
+                entity.ToTable("auditorias_6s");
 
                 entity.Property(e => e.FechaCompleto).HasColumnType("datetime");
 
@@ -87,14 +87,14 @@ namespace Sistema6S.Infrastructure.Data
             {
                 entity.HasKey(e => e.CalificacionId);
 
-                entity.ToTable("calificaciones");
+                entity.ToTable("calificaciones_6s");
             });
 
             modelBuilder.Entity<Departamentos>(entity =>
             {
                 entity.HasKey(e => e.DepartamentoId);
 
-                entity.ToTable("departamentos");
+                entity.ToTable("departamentos_6s");
 
                 entity.Property(e => e.Nombre)
                     .IsRequired()
