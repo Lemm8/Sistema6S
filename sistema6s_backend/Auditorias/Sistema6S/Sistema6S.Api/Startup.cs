@@ -39,6 +39,7 @@ namespace Sistema6S.Api
 
             // CADA QUE SE USE LA INTERFAZ(ABSTRACCIÓN), ENTREGAR INSTANCIA DE IMPLEMENTACIÓN
             services.AddTransient<IAuditoriasRepository, AuditoriasRepository>();
+            services.AddTransient<IAuditoresRepository, AuditoresRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
