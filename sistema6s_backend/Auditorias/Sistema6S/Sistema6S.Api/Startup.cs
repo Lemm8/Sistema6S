@@ -53,7 +53,10 @@ namespace Sistema6S.Api
             {
                 app.UseHsts();
             }
-
+            app.UseCors(x => x
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader());
             app.UseHttpsRedirection();
             app.UseMvc();
         }
