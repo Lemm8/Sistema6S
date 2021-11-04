@@ -1,17 +1,100 @@
 
 
 <template>
-    <div class="container main">
-        <h2 id="title">Auditores</h2>
-        <div>
-            <ul v-for="auditor in info" :key="auditor.userId">
-                <li>
-                    {{auditor.nombre}}
-                </li>
-            </ul>
-        </div>
-    </div>    
-    
+     <v-container class="grey lighten-5">
+        <v-row no-gutters>
+            <template v-for="auditor in info" :key="auditor.userId">
+                <v-col>
+                    <v-card
+                    class="center-avatar"
+                    max-width="344"
+                    elevation="2"
+                    >
+                        <v-avatar
+                            class="center"
+                            color= "primary"
+                            size="60">
+                        </v-avatar>
+                        <v-card-title>
+                            {{auditor.nombre}}
+                        </v-card-title>
+
+                        <v-card-subtitle class="center-avatar">
+                            {{auditor.userId}}
+                        </v-card-subtitle>
+
+                    </v-card>
+            </v-col>
+                <v-col>
+                    <v-card
+                    class="center-avatar"
+                    max-width="344"
+                    elevation="2"
+                    >
+                        <v-avatar
+                            class="center"
+                            color= "primary"
+                            size="60">
+                        </v-avatar>
+                        <v-card-title>
+                            {{auditor.nombre}}
+                        </v-card-title>
+
+                        <v-card-subtitle class="center-avatar">
+                            {{auditor.userId}}
+                        </v-card-subtitle>
+
+                    </v-card>
+            </v-col>
+          </template>
+        </v-row>
+        <v-row no-gutters>
+            <template v-for="auditor in info" :key="auditor.userId">
+                <v-col>
+                    <v-card
+                    class="center-avatar"
+                    max-width="344"
+                    elevation="2"
+                    >
+                        <v-avatar
+                            class="center"
+                            color= "primary"
+                            size="60">
+                        </v-avatar>
+                        <v-card-title>
+                            {{auditor.nombre}}
+                        </v-card-title>
+
+                        <v-card-subtitle class="center-avatar">
+                            {{auditor.userId}}
+                        </v-card-subtitle>
+
+                    </v-card>
+            </v-col>
+                <v-col>
+                    <v-card
+                    class="center-avatar"
+                    max-width="344"
+                    elevation="2"
+                    >
+                        <v-avatar
+                            class="center"
+                            color= "primary"
+                            size="60">
+                        </v-avatar>
+                        <v-card-title>
+                            {{auditor.nombre}}
+                        </v-card-title>
+
+                        <v-card-subtitle class="center-avatar">
+                            {{auditor.userId}}
+                        </v-card-subtitle>
+
+                    </v-card>
+            </v-col>
+          </template>
+        </v-row>
+  </v-container>
 </template>
 
 
@@ -55,5 +138,23 @@ export default {
     display: flex;
     justify-content: center;
 }
+.auditores-nombre {
+    align-content: center;
+}
+.auditores {
+    display: flex;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.center-avatar {
+    justify-content: center;
+}
+.center {
+    align-content: center;
+}
+
 
 </style>

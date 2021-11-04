@@ -1,6 +1,10 @@
-import { createApp} from 'vue'
+import { createApp } from 'vue'
+import {createVuetify} from 'vuetify/lib/framework.mjs'
 import App from './App.vue'
-import vuetify from './plugins/vuetify'
+import 'vuetify/dist/vuetify.min.css'
 
 
-createApp(App).use(vuetify).mount('#app')
+const app = createApp(App)
+const vuetify = createVuetify({})
+app.use(vuetify)
+app.mount('#app')

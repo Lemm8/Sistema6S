@@ -1,31 +1,17 @@
 <template>
-  <div>
-    <NavBar />
-    <Home />
-  </div>  
+  <v-app>
+      <Auditores />
+  </v-app>
 </template>
 
 <script>
-import Home from './views/Home.vue'
-import NavBar from './layouts/NavBar.vue'
-import axios from 'axios';
-window.axios = require('axios');
+import Auditores from './views/Auditores.vue'
+
 export default {
   name: 'App',
+
   components: {
-    Home,
-    NavBar
+    Auditores,
   },
-  mounted: function() {
-    axios.get("https://localhost:5001/api/auditores")
-         .then(response => console.log(response.data))
-         .catch(error => console.log(error));
-  }
 }
 </script>
-
-<style>
-body {
-  font-family: 'Oswald', sans-serif;
-}
-</style>
