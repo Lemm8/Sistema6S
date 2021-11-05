@@ -1,160 +1,168 @@
 
-
 <template>
-     <v-container class="grey lighten-5">
-        <v-row no-gutters>
-            <template v-for="auditor in info" :key="auditor.userId">
-                <v-col>
-                    <v-card
-                    class="center-avatar"
-                    max-width="344"
-                    elevation="2"
-                    >
-                        <v-avatar
-                            class="center"
-                            color= "primary"
-                            size="60">
-                        </v-avatar>
-                        <v-card-title>
-                            {{auditor.nombre}}
-                        </v-card-title>
-
-                        <v-card-subtitle class="center-avatar">
-                            {{auditor.userId}}
-                        </v-card-subtitle>
-
-                    </v-card>
-            </v-col>
-                <v-col>
-                    <v-card
-                    class="center-avatar"
-                    max-width="344"
-                    elevation="2"
-                    >
-                        <v-avatar
-                            class="center"
-                            color= "primary"
-                            size="60">
-                        </v-avatar>
-                        <v-card-title>
-                            {{auditor.nombre}}
-                        </v-card-title>
-
-                        <v-card-subtitle class="center-avatar">
-                            {{auditor.userId}}
-                        </v-card-subtitle>
-
-                    </v-card>
-            </v-col>
-          </template>
-        </v-row>
-        <v-row no-gutters>
-            <template v-for="auditor in info" :key="auditor.userId">
-                <v-col>
-                    <v-card
-                    class="center-avatar"
-                    max-width="344"
-                    elevation="2"
-                    >
-                        <v-avatar
-                            class="center"
-                            color= "primary"
-                            size="60">
-                        </v-avatar>
-                        <v-card-title>
-                            {{auditor.nombre}}
-                        </v-card-title>
-
-                        <v-card-subtitle class="center-avatar">
-                            {{auditor.userId}}
-                        </v-card-subtitle>
-
-                    </v-card>
-            </v-col>
-                <v-col>
-                    <v-card
-                    class="center-avatar"
-                    max-width="344"
-                    elevation="2"
-                    >
-                        <v-avatar
-                            class="center"
-                            color= "primary"
-                            size="60">
-                        </v-avatar>
-                        <v-card-title>
-                            {{auditor.nombre}}
-                        </v-card-title>
-
-                        <v-card-subtitle class="center-avatar">
-                            {{auditor.userId}}
-                        </v-card-subtitle>
-
-                    </v-card>
-            </v-col>
-          </template>
-        </v-row>
+  <v-container>
+    <v-row>
+      <v-col class="titulo">Operaciones</v-col>
+      <v-col class="subtitulo">Oficinas</v-col>
+    </v-row>
+    <v-row></v-row>
+    <v-col>
+      <v-row v-for="auditor in info" :key="auditor.userId">
+        <v-col>
+          <v-card
+            class="card"
+            elevation="2">
+            <v-avatar size="70" color="indigo">
+              <v-icon dark size="70">
+                mdi-account-circle
+              </v-icon>
+            </v-avatar>
+            <v-card-subtitle>
+              {{auditor.nombre}}
+            </v-card-subtitle>
+          </v-card>
+        </v-col>
+        <v-col>
+          <v-card
+            class="card"
+            elevation="2">
+            <v-avatar size="70" color="indigo">
+              <v-icon dark size="70">
+                mdi-account-circle
+              </v-icon>
+            </v-avatar>
+            <v-card-subtitle>
+              {{auditor.nombre}}
+            </v-card-subtitle>
+          </v-card>
+        </v-col>
+        <v-col>
+          <v-card
+            class="card"
+            elevation="2">
+            <v-avatar size="70" color="indigo">
+              <v-icon dark size="70">
+                mdi-account-circle
+              </v-icon>
+            </v-avatar>
+            <v-card-subtitle>
+              {{auditor.nombre}}
+            </v-card-subtitle>
+          </v-card>
+        </v-col>
+        <v-col>
+          <v-card
+            class="card"
+            elevation="2">
+            <v-avatar size="70" color="indigo">
+              <v-icon dark size="70">
+                mdi-account-circle
+              </v-icon>
+            </v-avatar>
+            <v-card-subtitle>
+              {{auditor.nombre}}
+            </v-card-subtitle>
+          </v-card>
+        </v-col>
+        <v-col></v-col>
+        <v-col>
+          <v-card
+            class="card"
+            elevation="2">
+            <v-avatar size="70" color="indigo">
+              <v-icon dark size="70">
+                mdi-account-circle
+              </v-icon>
+            </v-avatar>
+            <v-card-subtitle>
+              {{auditor.nombre}}
+            </v-card-subtitle>
+          </v-card>
+        </v-col>
+        <v-col>
+          <v-card
+            class="card"
+            elevation="2">
+            <v-avatar size="70" color="indigo">
+              <v-icon dark size="70">
+                mdi-account-circle
+              </v-icon>
+            </v-avatar>
+            <v-card-subtitle>
+              {{auditor.nombre}}
+            </v-card-subtitle>
+          </v-card>
+        </v-col>
+        <v-col>
+          <v-card
+            class="card"
+            elevation="2">
+            <v-avatar size="70" color="indigo">
+              <v-icon dark size="70">
+                mdi-account-circle
+              </v-icon>
+            </v-avatar>
+            <v-card-subtitle>
+              {{auditor.nombre}}
+            </v-card-subtitle>
+          </v-card>
+        </v-col>
+        <v-col>
+          <v-card
+            class="card"
+            elevation="2">
+            <v-avatar size="70" color="indigo">
+              <v-icon dark size="70">
+                mdi-account-circle
+              </v-icon>
+            </v-avatar>
+            <v-card-subtitle>
+              {{auditor.nombre}}
+            </v-card-subtitle>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-col>
   </v-container>
 </template>
 
-
-
 <script>
-import axios from 'axios' 
-window.axios = require('axios');
-//@btn-click="null"
-export default {
-    name: 'App',
-    data() {
-        return {
-            info : null
-        }
+import axios from 'axios';
+  export default {
+    name: 'Auditores',
+
+    data: () => {
+      return {
+        info : null
+      }
     },
-    mounted: function() {
-    axios.get("https://localhost:5001/api/auditores")
-            .then(response => this.info = response.data)
-         .catch(error => console.log(error));
-
-  }
-}
-
+      mounted () {
+        axios
+          .get('https://localhost:5001/api/auditores')
+          .then(response => {
+            this.info = response.data
+            console.log(this.info.data)
+          })
+      }
+    }
 </script>
-
-
-
 <style>
-#title {
-    text-align: center;
-    margin-top: 30px;
+.subtitulo {
+  text-align: center;
+  
 }
-
-.menu_div {
-    margin-top: 30px;
+.titulo {
+  text-align: center;
+  
 }
-.row {
-    margin-top: 10px;
+.button {
+ padding: 1rem;
 }
-.button_div {
-    display: flex;
-    justify-content: center;
+.text-center {
+  padding-top: 4rem;
 }
-.auditores-nombre {
-    align-content: center;
+.card {
+  text-align: center;
+  height: 10rem;
 }
-.auditores {
-    display: flex;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-.center-avatar {
-    justify-content: center;
-}
-.center {
-    align-content: center;
-}
-
-
 </style>
