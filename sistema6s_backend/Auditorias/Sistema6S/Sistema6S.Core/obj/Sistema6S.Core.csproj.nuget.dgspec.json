@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\LEMM\\diseno_software\\Sistema6S\\Sistema6S.Core\\Sistema6S.Core.csproj": {}
+    "D:\\LEMM\\diseno_software\\6S\\sistema6s_backend\\Auditorias\\Sistema6S\\Sistema6S.Core\\Sistema6S.Core.csproj": {}
   },
   "projects": {
-    "D:\\LEMM\\diseno_software\\Sistema6S\\Sistema6S.Core\\Sistema6S.Core.csproj": {
+    "D:\\LEMM\\diseno_software\\6S\\sistema6s_backend\\Auditorias\\Sistema6S\\Sistema6S.Core\\Sistema6S.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\LEMM\\diseno_software\\Sistema6S\\Sistema6S.Core\\Sistema6S.Core.csproj",
+        "projectUniqueName": "D:\\LEMM\\diseno_software\\6S\\sistema6s_backend\\Auditorias\\Sistema6S\\Sistema6S.Core\\Sistema6S.Core.csproj",
         "projectName": "Sistema6S.Core",
-        "projectPath": "D:\\LEMM\\diseno_software\\Sistema6S\\Sistema6S.Core\\Sistema6S.Core.csproj",
+        "projectPath": "D:\\LEMM\\diseno_software\\6S\\sistema6s_backend\\Auditorias\\Sistema6S\\Sistema6S.Core\\Sistema6S.Core.csproj",
         "packagesPath": "C:\\Users\\luism\\.nuget\\packages\\",
-        "outputPath": "D:\\LEMM\\diseno_software\\Sistema6S\\Sistema6S.Core\\obj\\",
+        "outputPath": "D:\\LEMM\\diseno_software\\6S\\sistema6s_backend\\Auditorias\\Sistema6S\\Sistema6S.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\luism\\AppData\\Roaming\\NuGet\\NuGet.Config",

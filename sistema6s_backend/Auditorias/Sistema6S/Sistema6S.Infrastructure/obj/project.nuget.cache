@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "elVFPVsLKqbF1l1wHKKAvd5Vh6jx7voZkwJdyQXVGyMiCUhdvOCrYFrh+HUGYiquE7Y7pyDvJMiaSpnTl59AgA==",
+  "dgSpecHash": "QMQZQmzr5DmYRKifUIHxOTnerOZ7Fm7+O4Otb/Bhc6tuu/v2+ARPb0d9zTFSSAfBbeLB6ww15Zz0B5oxkgXSgA==",
   "success": true,
-  "projectFilePath": "D:\\LEMM\\diseno_software\\Sistema6S\\Sistema6S.Infrastructure\\Sistema6S.Infrastructure.csproj",
+  "projectFilePath": "D:\\LEMM\\diseno_software\\6S\\sistema6s_backend\\Auditorias\\Sistema6S\\Sistema6S.Infrastructure\\Sistema6S.Infrastructure.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\luism\\.nuget\\packages\\automapper\\2.1.1\\automapper.2.1.1.nupkg.sha512",
     "C:\\Users\\luism\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\luism\\.nuget\\packages\\microsoft.entityframeworkcore\\2.1.0\\microsoft.entityframeworkcore.2.1.0.nupkg.sha512",
     "C:\\Users\\luism\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\2.1.0\\microsoft.entityframeworkcore.abstractions.2.1.0.nupkg.sha512",
@@ -68,5 +69,16 @@
     "C:\\Users\\luism\\.nuget\\packages\\system.threading\\4.0.11\\system.threading.4.0.11.nupkg.sha512",
     "C:\\Users\\luism\\.nuget\\packages\\system.threading.tasks\\4.0.11\\system.threading.tasks.4.0.11.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AutoMapper 2.1.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "AutoMapper",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    }
+  ]
 }

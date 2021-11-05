@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\LEMM\\diseno_software\\Sistema6S\\Sistema6S.UnitTests\\Sistema6S.UnitTests.csproj": {}
+    "D:\\LEMM\\diseno_software\\6S\\sistema6s_backend\\Auditorias\\Sistema6S\\Sistema6S.UnitTests\\Sistema6S.UnitTests.csproj": {}
   },
   "projects": {
-    "D:\\LEMM\\diseno_software\\Sistema6S\\Sistema6S.UnitTests\\Sistema6S.UnitTests.csproj": {
+    "D:\\LEMM\\diseno_software\\6S\\sistema6s_backend\\Auditorias\\Sistema6S\\Sistema6S.UnitTests\\Sistema6S.UnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\LEMM\\diseno_software\\Sistema6S\\Sistema6S.UnitTests\\Sistema6S.UnitTests.csproj",
+        "projectUniqueName": "D:\\LEMM\\diseno_software\\6S\\sistema6s_backend\\Auditorias\\Sistema6S\\Sistema6S.UnitTests\\Sistema6S.UnitTests.csproj",
         "projectName": "Sistema6S.UnitTests",
-        "projectPath": "D:\\LEMM\\diseno_software\\Sistema6S\\Sistema6S.UnitTests\\Sistema6S.UnitTests.csproj",
+        "projectPath": "D:\\LEMM\\diseno_software\\6S\\sistema6s_backend\\Auditorias\\Sistema6S\\Sistema6S.UnitTests\\Sistema6S.UnitTests.csproj",
         "packagesPath": "C:\\Users\\luism\\.nuget\\packages\\",
-        "outputPath": "D:\\LEMM\\diseno_software\\Sistema6S\\Sistema6S.UnitTests\\obj\\",
+        "outputPath": "D:\\LEMM\\diseno_software\\6S\\sistema6s_backend\\Auditorias\\Sistema6S\\Sistema6S.UnitTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\luism\\AppData\\Roaming\\NuGet\\NuGet.Config",

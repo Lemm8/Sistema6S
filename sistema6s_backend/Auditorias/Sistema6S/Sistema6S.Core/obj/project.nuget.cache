@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A/iTunkjWBbI9w9HUlkOdEW5LvCNUmcnmrRtGqpxm/dWIa9oVyNZ6eILQSqV4rh78CUvDQLDV4GYJ1Q26MWCAQ==",
+  "dgSpecHash": "lMeWqSHdGa1beJc6TgdkUSQRezLS6fnTlAyOMPz+ehe+GHG2fsWYDxbc2wj21nWU0k3hVQIDSNnw70zuxAoheQ==",
   "success": true,
-  "projectFilePath": "D:\\LEMM\\diseno_software\\Sistema6S\\Sistema6S.Core\\Sistema6S.Core.csproj",
+  "projectFilePath": "D:\\LEMM\\diseno_software\\6S\\sistema6s_backend\\Auditorias\\Sistema6S\\Sistema6S.Core\\Sistema6S.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\luism\\.nuget\\packages\\microsoft.netcore.app\\2.1.0\\microsoft.netcore.app.2.1.0.nupkg.sha512",
     "C:\\Users\\luism\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.1.0\\microsoft.netcore.dotnetapphost.2.1.0.nupkg.sha512",

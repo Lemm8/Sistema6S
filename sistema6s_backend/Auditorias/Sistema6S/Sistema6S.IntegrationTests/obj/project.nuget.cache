@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NH3ccteDiYa5AbIg/1DnWZeWm3OSdPbrLumaS2quXHnYZHzjJUt4tBQAdpwri1Yz2gRTSK0HsyuaJkHC+efmwQ==",
+  "dgSpecHash": "cDhuJnkQpqdxvF9op8MHLmU9i/AcspgVU+PjtuGXAYaViGWPTS1cUPGsd/c5Jeubl0+VSba8E7KacXgFo9K8HA==",
   "success": true,
-  "projectFilePath": "D:\\LEMM\\diseno_software\\Sistema6S\\Sistema6S.IntegrationTests\\Sistema6S.IntegrationTests.csproj",
+  "projectFilePath": "D:\\LEMM\\diseno_software\\6S\\sistema6s_backend\\Auditorias\\Sistema6S\\Sistema6S.IntegrationTests\\Sistema6S.IntegrationTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\luism\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\luism\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

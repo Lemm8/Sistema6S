@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
+      "AutoMapper/2.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AutoMapper.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AutoMapper.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -959,6 +968,21 @@
     }
   },
   "libraries": {
+    "AutoMapper/2.1.1": {
+      "sha512": "F1npRsHSiR01l5G7txZ2IxVgWxk4Gi8XVDwYlJhqFIfZquLtMfK93qi0ABjCM9f8R/pCIel1t916soxKwGvaVg==",
+      "type": "package",
+      "path": "automapper/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "automapper.2.1.1.nupkg.sha512",
+        "automapper.nuspec",
+        "lib/net40/AutoMapper.dll",
+        "lib/net40/AutoMapper.xml",
+        "lib/sl4/AutoMapper.XML",
+        "lib/sl4/AutoMapper.dll"
+      ]
+    },
     "Microsoft.CSharp/4.5.0": {
       "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
       "type": "package",
@@ -3666,6 +3690,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "AutoMapper >= 2.1.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.1.0",
       "Microsoft.EntityFrameworkCore.Tools >= 2.1.0",
       "Microsoft.NETCore.App >= 2.1.0",
@@ -3678,11 +3703,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\LEMM\\diseno_software\\Sistema6S\\Sistema6S.Infrastructure\\Sistema6S.Infrastructure.csproj",
+      "projectUniqueName": "D:\\LEMM\\diseno_software\\6S\\sistema6s_backend\\Auditorias\\Sistema6S\\Sistema6S.Infrastructure\\Sistema6S.Infrastructure.csproj",
       "projectName": "Sistema6S.Infrastructure",
-      "projectPath": "D:\\LEMM\\diseno_software\\Sistema6S\\Sistema6S.Infrastructure\\Sistema6S.Infrastructure.csproj",
+      "projectPath": "D:\\LEMM\\diseno_software\\6S\\sistema6s_backend\\Auditorias\\Sistema6S\\Sistema6S.Infrastructure\\Sistema6S.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\luism\\.nuget\\packages\\",
-      "outputPath": "D:\\LEMM\\diseno_software\\Sistema6S\\Sistema6S.Infrastructure\\obj\\",
+      "outputPath": "D:\\LEMM\\diseno_software\\6S\\sistema6s_backend\\Auditorias\\Sistema6S\\Sistema6S.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\luism\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3699,8 +3724,8 @@
         "netcoreapp2.1": {
           "targetAlias": "netcoreapp2.1",
           "projectReferences": {
-            "D:\\LEMM\\diseno_software\\Sistema6S\\Sistema6S.Core\\Sistema6S.Core.csproj": {
-              "projectPath": "D:\\LEMM\\diseno_software\\Sistema6S\\Sistema6S.Core\\Sistema6S.Core.csproj"
+            "D:\\LEMM\\diseno_software\\6S\\sistema6s_backend\\Auditorias\\Sistema6S\\Sistema6S.Core\\Sistema6S.Core.csproj": {
+              "projectPath": "D:\\LEMM\\diseno_software\\6S\\sistema6s_backend\\Auditorias\\Sistema6S\\Sistema6S.Core\\Sistema6S.Core.csproj"
             }
           }
         }
@@ -3715,6 +3740,10 @@
       "netcoreapp2.1": {
         "targetAlias": "netcoreapp2.1",
         "dependencies": {
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[2.1.1, )"
+          },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[2.1.0, )"
@@ -3745,5 +3774,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AutoMapper 2.1.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "AutoMapper",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    }
+  ]
 }

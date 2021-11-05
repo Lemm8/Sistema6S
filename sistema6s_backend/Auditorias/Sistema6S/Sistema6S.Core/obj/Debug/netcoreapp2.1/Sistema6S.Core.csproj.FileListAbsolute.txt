@@ -8,3 +8,13 @@ D:\LEMM\diseno_software\Sistema6S\Sistema6S.Core\obj\Debug\netcoreapp2.1\Sistema
 D:\LEMM\diseno_software\Sistema6S\Sistema6S.Core\obj\Debug\netcoreapp2.1\Sistema6S.Core.csproj.CoreCompileInputs.cache
 D:\LEMM\diseno_software\Sistema6S\Sistema6S.Core\obj\Debug\netcoreapp2.1\Sistema6S.Core.dll
 D:\LEMM\diseno_software\Sistema6S\Sistema6S.Core\obj\Debug\netcoreapp2.1\Sistema6S.Core.pdb
+D:\LEMM\diseno_software\6S\sistema6s_backend\Auditorias\Sistema6S\Sistema6S.Core\bin\Debug\netcoreapp2.1\Sistema6S.Core.deps.json
+D:\LEMM\diseno_software\6S\sistema6s_backend\Auditorias\Sistema6S\Sistema6S.Core\bin\Debug\netcoreapp2.1\Sistema6S.Core.dll
+D:\LEMM\diseno_software\6S\sistema6s_backend\Auditorias\Sistema6S\Sistema6S.Core\bin\Debug\netcoreapp2.1\Sistema6S.Core.pdb
+D:\LEMM\diseno_software\6S\sistema6s_backend\Auditorias\Sistema6S\Sistema6S.Core\obj\Debug\netcoreapp2.1\Sistema6S.Core.csproj.AssemblyReference.cache
+D:\LEMM\diseno_software\6S\sistema6s_backend\Auditorias\Sistema6S\Sistema6S.Core\obj\Debug\netcoreapp2.1\Sistema6S.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\LEMM\diseno_software\6S\sistema6s_backend\Auditorias\Sistema6S\Sistema6S.Core\obj\Debug\netcoreapp2.1\Sistema6S.Core.AssemblyInfoInputs.cache
+D:\LEMM\diseno_software\6S\sistema6s_backend\Auditorias\Sistema6S\Sistema6S.Core\obj\Debug\netcoreapp2.1\Sistema6S.Core.AssemblyInfo.cs
+D:\LEMM\diseno_software\6S\sistema6s_backend\Auditorias\Sistema6S\Sistema6S.Core\obj\Debug\netcoreapp2.1\Sistema6S.Core.csproj.CoreCompileInputs.cache
+D:\LEMM\diseno_software\6S\sistema6s_backend\Auditorias\Sistema6S\Sistema6S.Core\obj\Debug\netcoreapp2.1\Sistema6S.Core.dll
+D:\LEMM\diseno_software\6S\sistema6s_backend\Auditorias\Sistema6S\Sistema6S.Core\obj\Debug\netcoreapp2.1\Sistema6S.Core.pdb

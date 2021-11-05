@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "7UQDcyojjBWV3dHlpE2Lb2s7TV4CRm1n5FW3ID5mphmDz4JUMrcVutYuwpGtoV9KzdGPG7Sp1rgEU++nwP12tg==",
+  "dgSpecHash": "4U/faiSsKARZTU+b0dxotWvpD1hU40VWZigJoW3KDjp7bgKtEACoRef1X3F3vEhkf8bFgFSvqbCeZrbXs/2d+Q==",
   "success": true,
-  "projectFilePath": "D:\\LEMM\\diseno_software\\Sistema6S\\Sistema6S.Api\\Sistema6S.Api.csproj",
+  "projectFilePath": "D:\\LEMM\\diseno_software\\6S\\sistema6s_backend\\Auditorias\\Sistema6S\\Sistema6S.Api\\Sistema6S.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\luism\\.nuget\\packages\\automapper\\7.0.1\\automapper.7.0.1.nupkg.sha512",
+    "C:\\Users\\luism\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\5.0.1\\automapper.extensions.microsoft.dependencyinjection.5.0.1.nupkg.sha512",
     "C:\\Users\\luism\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\luism\\.nuget\\packages\\microsoft.aspnetcore\\2.1.1\\microsoft.aspnetcore.2.1.1.nupkg.sha512",
     "C:\\Users\\luism\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.1.1\\microsoft.aspnetcore.antiforgery.2.1.1.nupkg.sha512",
@@ -274,7 +276,7 @@
     "C:\\Users\\luism\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.1\\system.threading.tasks.extensions.4.5.1.nupkg.sha512",
     "C:\\Users\\luism\\.nuget\\packages\\system.threading.tasks.parallel\\4.3.0\\system.threading.tasks.parallel.4.3.0.nupkg.sha512",
     "C:\\Users\\luism\\.nuget\\packages\\system.threading.thread\\4.3.0\\system.threading.thread.4.3.0.nupkg.sha512",
-    "C:\\Users\\luism\\.nuget\\packages\\system.valuetuple\\4.3.0\\system.valuetuple.4.3.0.nupkg.sha512",
+    "C:\\Users\\luism\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
     "C:\\Users\\luism\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\luism\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\luism\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
