@@ -5,65 +5,199 @@
         6S
       </v-col>
       <v-col>
-        <v-row>
+        <v-row class="padding-for-button">
           <v-btn
             depressed
-            class="button"
             color="primary"
+            outlined
             block
+            x-large
           >
+            <v-row>
+              <v-icon
+                large
+                color="green darken-2"
+              >
+                mdi-home
+              </v-icon>
+            </v-row>
           INICIO</v-btn>
         </v-row>
-        <v-row>
+        <v-row class="padding-for-button">
           <v-btn
             depressed
-            class="button"
             color="primary"
+            outlined
             block
+            x-large
           >
+            <v-row>
+              <v-icon
+                large
+                color="green darken-2"
+              >
+                mdi-domain
+              </v-icon>
+            </v-row>
           INSTRUCCION</v-btn>
         </v-row>
           
-        <v-row>
+        <v-row class="padding-for-button" >
           <v-btn
             depressed
-            class="button"
             color="primary"
+            outlined
             block
+            x-large
           >
+            <v-row>
+              <v-icon
+                large
+                color="green darken-2"
+              >
+                mdi-domain
+              </v-icon>
+            </v-row>
         INDICADORES</v-btn>
         </v-row>
       </v-col>
       <v-col>
-        <v-row>
+        <v-row class="padding-for-button">
           <v-btn
             depressed
-            class="button"
             color="primary"
+            outlined
             block
+            x-large
           >
+            <v-row>
+              <v-icon
+                large
+                color="green darken-2"
+              >
+                mdi-domain
+              </v-icon>
+            </v-row>
             HACER AUDITORIA OPERACIONES
           </v-btn>
         </v-row>
-        <v-row>
+        <v-row class="padding-for-button">
           <v-btn
             depressed
-            class="button"
             color="primary"
+            outlined
             block
+            x-large
           >
+            <v-row>
+              <v-icon
+                large
+                color="green darken-2"
+              >
+                mdi-domain
+              </v-icon>
+            </v-row>
         CALIFICACIONES 6S OPERACIONES</v-btn>
         </v-row>
 
-        <v-row>
+        <v-row class="padding-for-button">
           <v-btn
             depressed
-            class="button"
             color="primary"
+            outlined
             block
+            x-large
             @click="goToAuditores"
           >
+            <v-row>
+              <v-icon
+                large
+                color="green darken-2"
+              >
+                mdi-domain
+              </v-icon>
+            </v-row>
         AUDITORES</v-btn>
+        </v-row>
+      </v-col>
+      <v-col>
+        <v-row class="padding-for-button">
+          <v-btn
+            depressed
+            color="primary"
+            outlined
+            block
+            x-large
+          >
+            <v-row>
+              <v-icon
+                large
+                color="green darken-2"
+              >
+                mdi-domain
+              </v-icon>
+            </v-row>
+          HACER AUDITORIA ADMINISTRATIVA
+          </v-btn>
+        </v-row>
+        <v-row class="padding-for-button">
+          <v-btn
+            depressed
+            color="primary"
+            outlined
+            block
+            x-large
+          >
+            <v-row>
+              <v-icon
+                large
+                color="green darken-2"
+              >
+                mdi-domain
+              </v-icon>
+            </v-row>
+              CALIFICACIONES 6S ADMINISTRATIVA
+          </v-btn>
+        </v-row>
+
+        <v-row class="padding-for-button">
+          <v-btn
+            depressed
+            color="primary"
+            outlined
+            block
+            x-large
+            @click="goToAuditores"
+          >
+            <v-row>
+              <v-icon
+                large
+                color="green darken-2"
+              >
+                mdi-domain
+              </v-icon>
+            </v-row>
+        KAIZEN 6S
+          </v-btn>
+        </v-row>
+        <v-row class="padding-for-button">
+          <v-btn
+            depressed
+            color="primary"
+            outlined
+            block
+            x-large
+            @click="goToAuditores"
+          >
+            <v-row>
+              <v-icon
+                large
+                color="green darken-2"
+              >
+                mdi-domain
+              </v-icon>
+            </v-row>
+        RECONOCIMIENTOS</v-btn>
         </v-row>
       </v-col>
 
@@ -135,10 +269,12 @@
   }
 </script>
 <style>
-.button {
- padding: 1rem;
-}
 .text-center {
   padding-top: 4rem;
+}
+.padding-for-button {
+  height: 4rem;
+  padding-top: 3rem;
+  padding-right: 3rem;
 }
 </style>
