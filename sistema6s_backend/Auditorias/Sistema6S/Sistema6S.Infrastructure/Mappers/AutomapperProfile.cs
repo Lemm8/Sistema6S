@@ -11,7 +11,7 @@ namespace Sistema6S.Infrastructure.Mappers
     {
         public AutomapperProfile()
         {
-            // NETIDAD ORIGEN -> ENTIDAD DESTINO
+            // ENTIDAD ORIGEN -> ENTIDAD DESTINO
             CreateMap<Auditorias6s, Auditorias6sDto>();
             CreateMap<Auditorias6sDto, Auditorias6s>();
         }

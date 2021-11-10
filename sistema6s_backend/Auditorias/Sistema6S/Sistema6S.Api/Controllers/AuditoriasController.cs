@@ -50,33 +50,7 @@ namespace Sistema6S.Api.Controllers
                         };
 
             return Ok(query);
-
-            //var query = await
-            //     from auds in _dbcontext.Auditorias6s
-            //     join audes in _dbcontext.Auditores6s
-            //        on new { auditorId = auds.AuditorId } equals new { auditorId = audes.UserId }
-            //     join ar in _dbcontext.Areas6s
-            //        on new { areaId = auds.AreaId } equals new { areaId = ar.AreaId }
-            //     select new
-            //     {
-            //         auditoriaId = auds.AuditoriaId,
-            //         auditoriaNombre = auds.Nombre,
-            //         auditor = audes.Nombre,
-            //         area = ar.Nombre,
-            //         auditoriaFechaInicio = auds.FechaInicio,
-            //         auditoriaFechaTarget = auds.FechaTarget,
-            //         auditoriaFechaCompleto = auds.FechaCompleto
-            //     };
-
-            //return Ok(auditoriasDto);
         }
-
-        //public async Task<IActionResult> GetAuditorias()
-        //{
-        //    var auditorias = await _repository.GetAuditorias();
-        //    var auditoriasDto = _mapper.Map<IEnumerable<Auditorias6sDto>>(auditorias);
-        //    return Ok(auditoriasDto);                        
-        //}
 
 
 
