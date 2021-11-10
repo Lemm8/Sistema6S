@@ -1,127 +1,62 @@
 
 <template>
   <v-container>
-    <v-row>
-      <v-col class="titulo">Operaciones</v-col>
-      <v-col class="subtitulo">Oficinas</v-col>
-    </v-row>
-    <v-row></v-row>
-    <v-col>
-      <v-row v-for="auditor in info" :key="auditor.userId">
-        <v-col>
-          <v-card
-            class="card"
-            elevation="2">
-            <v-avatar size="70" color="indigo">
-              <v-icon dark size="70">
-                mdi-account-circle
-              </v-icon>
-            </v-avatar>
-            <v-card-subtitle>
-              {{auditor.nombre}}
-            </v-card-subtitle>
-          </v-card>
-        </v-col>
-        <v-col>
-          <v-card
-            class="card"
-            elevation="2">
-            <v-avatar size="70" color="indigo">
-              <v-icon dark size="70">
-                mdi-account-circle
-              </v-icon>
-            </v-avatar>
-            <v-card-subtitle>
-              {{auditor.nombre}}
-            </v-card-subtitle>
-          </v-card>
-        </v-col>
-        <v-col>
-          <v-card
-            class="card"
-            elevation="2">
-            <v-avatar size="70" color="indigo">
-              <v-icon dark size="70">
-                mdi-account-circle
-              </v-icon>
-            </v-avatar>
-            <v-card-subtitle>
-              {{auditor.nombre}}
-            </v-card-subtitle>
-          </v-card>
-        </v-col>
-        <v-col>
-          <v-card
-            class="card"
-            elevation="2">
-            <v-avatar size="70" color="indigo">
-              <v-icon dark size="70">
-                mdi-account-circle
-              </v-icon>
-            </v-avatar>
-            <v-card-subtitle>
-              {{auditor.nombre}}
-            </v-card-subtitle>
-          </v-card>
-        </v-col>
-        <v-col></v-col>
-        <v-col>
-          <v-card
-            class="card"
-            elevation="2">
-            <v-avatar size="70" color="indigo">
-              <v-icon dark size="70">
-                mdi-account-circle
-              </v-icon>
-            </v-avatar>
-            <v-card-subtitle>
-              {{auditor.nombre}}
-            </v-card-subtitle>
-          </v-card>
-        </v-col>
-        <v-col>
-          <v-card
-            class="card"
-            elevation="2">
-            <v-avatar size="70" color="indigo">
-              <v-icon dark size="70">
-                mdi-account-circle
-              </v-icon>
-            </v-avatar>
-            <v-card-subtitle>
-              {{auditor.nombre}}
-            </v-card-subtitle>
-          </v-card>
-        </v-col>
-        <v-col>
-          <v-card
-            class="card"
-            elevation="2">
-            <v-avatar size="70" color="indigo">
-              <v-icon dark size="70">
-                mdi-account-circle
-              </v-icon>
-            </v-avatar>
-            <v-card-subtitle>
-              {{auditor.nombre}}
-            </v-card-subtitle>
-          </v-card>
-        </v-col>
-        <v-col>
-          <v-card
-            class="card"
-            elevation="2">
-            <v-avatar size="70" color="indigo">
-              <v-icon dark size="70">
-                mdi-account-circle
-              </v-icon>
-            </v-avatar>
-            <v-card-subtitle>
-              {{auditor.nombre}}
-            </v-card-subtitle>
-          </v-card>
-        </v-col>
+      <v-row>
+        <v-col class="titulo">Operaciones</v-col>
+        <v-col class="subtitulo">Oficinas</v-col>
       </v-row>
+      <v-row></v-row>
+      <v-col>
+        <v-row no-gutters>
+          <v-col>
+            <template v-for="auditor in info">
+              <v-col
+                :key="auditor.userId">
+                  <v-card
+                    class="card"
+                    elevation="2">
+                    <v-avatar size="70" color="indigo">
+                      <v-icon dark size="70">
+                        mdi-account-circle
+                      </v-icon>
+                    </v-avatar>
+                    <v-card-subtitle>
+                      {{auditor.nombre}}
+                    </v-card-subtitle>
+                  </v-card>
+              </v-col>
+             <v-responsive
+               v-if="auditor.userId === 3"
+                :key="`width-${auditor.userId}`"
+                width="20%"
+             ></v-responsive>
+              </template>
+          </v-col>
+          <v-col>
+            <template v-for="auditor in info">
+              <v-col
+                :key="auditor.userId">
+                  <v-card
+                    class="card"
+                    elevation="2">
+                    <v-avatar size="70" color="indigo">
+                      <v-icon dark size="70">
+                        mdi-account-circle
+                      </v-icon>
+                    </v-avatar>
+                    <v-card-subtitle>
+                      {{auditor.nombre}}
+                    </v-card-subtitle>
+                  </v-card>
+              </v-col>
+             <v-responsive
+               v-if="auditor.userId === 3"
+                :key="`width-${auditor.userId}`"
+                width="20%"
+             ></v-responsive>
+              </template>
+          </v-col>
+        </v-row>
     </v-col>
   </v-container>
 </template>
