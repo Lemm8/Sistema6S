@@ -1,19 +1,9 @@
 <template>
     <div class="container">
-        <h2 id="title">Plataforma 6S</h2>
-        <div v-for="auditoria in auditorias" :key="auditoria.id">
-            <AuditoriaComponente 
-                v-bind:auditoriaId = "auditoria.auditoriaId"
-                v-bind:auditoriaNombre = "auditoria.auditoriaNombre"
-                v-bind:auditoriaEstado = "auditoria.auditoriaEstado"
-                v-bind:auditoriaFechaInicio = "auditoria.auditoriaFechaInicio"
-                v-bind:auditoriaFechaTarget = "auditoria.auditoriaFechaTarget"
-                v-bind:auditoriaFechaComplete = "auditoria.auditoriaFechaCompleto"
-                v-bind:auditorNombre = "auditoria.auditorNombre"
-                v-bind:area = "auditoria.area"
-            />
-        </div>                        
-
+        <h2 id="title">Plataforma 6S</h2>            
+        <div v-for="auditoria in auditorias_month" :key="auditoria.id">
+            <AuditoriaComponente v-bind:auditoria_object = "auditoria" />
+        </div>
     </div>
 </template>
 
@@ -27,11 +17,75 @@ import AuditoriaComponente from '../components/AuditoriaComponent.vue'
 export default {
     name: 'Auditorias',
     components: {
-        AuditoriaComponente
-    },    
+        AuditoriaComponente,
+    },       
     data() {
         return {
-            auditorias: []
+            //months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+            auditorias: {},
+            auditorias_month: [
+                {
+                    "mes": 1,
+                    "mes_nombre": "Enero",
+                    "auditorias": []
+                },
+                {
+                    "mes": 2,
+                    "mes_nombre": "Febrero",                    
+                    "auditorias": []
+                },
+                {
+                    "mes": 3,
+                    "mes_nombre": "Marzo",
+                    "auditorias": []
+                },
+                {
+                    "mes": 4,
+                    "mes_nombre": "Abril",
+                    "auditorias": []
+                },
+                {
+                    "mes": 5,
+                    "mes_nombre": "Mayo",
+                    "auditorias": []
+                },
+                {
+                    "mes": 6,
+                    "mes_nombre": "Junio",
+                    "auditorias": []
+                },
+                {
+                    "mes": 7,
+                    "mes_nombre": "Julio",
+                    "auditorias": []
+                },
+                {
+                    "mes": 8,
+                    "mes_nombre": "Agosto",
+                    "auditorias": []
+                },
+                {
+                    "mes": 9,
+                    "mes_nombre": "Septiembre",
+                    "auditorias": []
+                },
+                {
+                    "mes": 10,
+                    "mes_nombre": "Octubre",
+                    "auditorias": []
+                },
+                {
+                    "mes": 11,
+                    "mes_nombre": "Noviembre",
+                    "auditorias": []
+                },
+                {
+                    "mes": 12,
+                    "mes_nombre": "Diciembre",
+                    "auditorias": []
+                },
+            ],
+
         }
     },
     // YA CARGADO, LLAMAMOS A LA API
@@ -39,10 +93,17 @@ export default {
         let vue = this
         axios.get('https://localhost:44390/api/auditorias')
         .then( function( response ) {
-            vue.auditorias = response.data
-            //console.log(vue.auditorias)
-        })
-    }
+            vue.auditorias = response.data       
+            vue.auditorias_month.forEach(function(item) {
+                var x = item.mes;
+                for(let i = 0; i < vue.auditorias.length; i++) {
+                    if( vue.auditorias[i].auditoriaMes == item.mes) {
+                        item.auditorias.push(vue.auditorias[i]);
+                    }                    
+                }                
+            });
+        });        
+    },
 }
 
 </script>

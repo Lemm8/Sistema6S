@@ -1,61 +1,77 @@
 <template>
     <div class="container">
-        <div class="auditoria-title">
+        <div v-if="auditoria_object.auditorias.length != 0" class="auditoria-title">
             <div class="auditoria-head">
                 <i class="fa fa-calendar"></i>
-                Título
-            </div>            
-        </div>    
-        <div class="auditor">            
-            {{ auditorNombre }}
-            <i class="fa fa-plus" title="Añadir Auditoría"></i>
-        </div>    
-        <div class="tareas"> 
-            <a href="#">Agregar auditoría</a>
-        </div>    
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th scope="col">Id</th>
-                    <th scope="col">Área</th>
-                    <th scope="col"></th>                    
-                    <th scope="col">Inicial</th>
-                    <th scope="col">Target</th>
-                    <th scope="col">Complete</th>
-                    <th scope="col">Estado</th>
-                    <th scope="col"></th>
-                    <th scope="col"></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row"> {{ auditoriaId }} </th>                    
-                    <td> {{area }} </td>                    
-                    <td> <a href="#">Iniciar Auditoría</a> </td>
-                                                                                
-                    <td> {{ auditoriaFechaInicio }} </td>
-                                
-                    <td v-if="auditoriaFechaTarget"> 
-                        {{ auditoriaFechaTarget }}
-                    </td>
-                    <td v-else> 
-                        Sin fecha
-                    </td>
+                {{ auditoria_object.mes_nombre }} 
+            </div>         
+        </div>
+        <div v-for="auditoria in auditoria_object.auditorias" :key="auditoria.id">
+            <div class="auditor">            
+                {{ auditoria.auditorNombre }}
+                <i class="fa fa-plus" title="Añadir Auditoría"></i>
+            </div>   
+            <div class="tareas"> 
+                <a href="#">Agregar auditoría</a>
+            </div>    
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Área</th>
+                        <th scope="col"></th>                    
+                        <th scope="col">Inicial</th>
+                        <th scope="col">Target</th>
+                        <th scope="col">Complete</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"> {{ auditoria.auditoriaId }} </th>                    
+                        <td> {{ auditoria.area }} </td>                    
+                        <td> <a href="#">Iniciar Auditoría</a> </td>
+                                                                                    
+                        <td> {{ auditoria.auditoriaFechaInicio }} </td>
+                                    
+                        <td v-if="auditoria.auditoriaFechaTarget"> 
+                            {{ auditoria.auditoriaFechaTarget }}
+                        </td>
+                        <td v-else> 
+                            Sin fecha
+                        </td>
 
-                    <td v-if="auditoriaFechaCompleto"> 
-                        {{ auditoriaFechaCompleto }}
-                    </td>
-                    <td v-else> 
-                        Sin fecha
-                    </td>
+                        <td v-if="auditoria.auditoriaFechaCompleto"> 
+                            {{ auditoria.auditoriaFechaCompleto }}
+                        </td>
+                        <td v-else> 
+                            Sin fecha
+                        </td>
 
-                    <td> {{ auditoriaEstado}} </td>
+                        <td v-if="auditoria.auditoriaEstado == 0">
+                            <i class="fa fa-check-circle" aria-hidden="true" style="color: green"></i>
+                        </td>
 
-                    <td> <a href="#"> <i class="fa fa-edit" title="Editar"></i> </a> </td>
-                    <td> <a href="#"> <i class="fa fa-trash" title="Borrar"></i> </a> </td>
-                </tr>                
-            </tbody>
-        </table>        
+                        <td v-if="auditoria.auditoriaEstado == 1">
+                            <i class="fa fa-check-circle" aria-hidden="true" style="color: red"></i>
+                        </td>
+
+                        <td v-if="auditoria.auditoriaEstado == 2">
+                            <i class="fa fa-hourglass-half" aria-hidden="true" style="color: yellow"></i>
+                        </td>
+
+                        <td v-if="auditoria.auditoriaEstado == 3">
+                            <i class="fa fa-hourglass-half" aria-hidden="true" style="color: red"></i>
+                        </td>
+
+                        <td> <a href="#"> <i class="fa fa-edit" title="Editar"></i> </a> </td>
+                        <td> <a href="#"> <i class="fa fa-trash" title="Borrar"></i> </a> </td>
+                    </tr>                
+                </tbody>
+            </table>        
+        </div>
     </div>
 </template>
 
@@ -66,31 +82,8 @@
 export default {
     name: 'Auditorias',
     props: [
-        'auditoriaId', 
-        'auditoriaNombre',
-        'auditorId',
-        'auditorNombre',
-        'auditoriaNombre', 
-        'auditoriaFechaInicio', 
-        'auditoriaFechaTarget', 
-        'auditoriaFechaCompleto',
-        'auditoriaEstado',
-        'area'
+        'auditoria_object',
     ],
-    data() {
-        return {
-            auditorias: []
-        }
-    },
-    // YA CARGADO, LLAMAMOS A LA API
-    /*mounted() {
-        let vue = this
-        axios.get('https://localhost:44390/api/auditorias')
-        .then( function( response ) {
-            vue.auditorias = response.data
-            console.log(vue.auditorias)
-        })
-    }*/
 }
 
 </script>
