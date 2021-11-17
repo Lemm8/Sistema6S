@@ -1,0 +1,115 @@
+@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Calificaciones";
+}
+<h1>@ViewData["Title"]</h1>
+
+<!--
+$conn = mysqli_connect("localhost", "root", "", "company");
+// Check connection
+if ($conn->connect_error) {
+die("Connection failed: " . $conn->connect_error);
+}
+$sql = "SELECT id, username, password FROM login";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+// output data of each row
+while($row = $result->fetch_assoc()) {
+echo "<tr>
+    <td>" . $row["id"]. "</td>
+    <td>" . $row["username"] . "</td>
+    <td>
+        "
+        . $row["password"]. "
+    </td>
+</tr>";
+}
+echo "</table>";
+} else { echo "0 results"; }
+$conn->close();
+-->
+<button style="background-color: #009879; color: white; padding: 12px 15px; " type="button">Crear Reporte de Calificaciones</button>
+<style>
+
+
+
+    .content-table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        min-width: 400px;
+        border-radius: 5px 5px 0 0;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+
+        .content-table thead tr {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .content-table th,
+        .content-table td {
+            padding: 12px 15px;
+        }
+
+        .content-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+            .content-table tbody tr:nth-of-type(even) {
+                background-color: #f3f3f3;
+            }
+
+            .content-table tbody tr:last-of-type {
+                border-bottom: 2px solid #009879;
+            }
+
+            .content-table tbody tr.active-row {
+                font-weight: bold;
+                color: #009879;
+            }
+</style>
+<table class="content-table">
+    <thead>
+        <tr>
+            <th>
+                Mes de Auditoria
+            </th>
+            <th>S1</th>
+            <th>S2</th>
+            <th>S3</th>
+            <th>S4</th>
+            <th>S5</th>
+            <th>S6</th>
+            <th>Calif</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="active-row">
+            <td>Q1 ENERO</td>
+            <td>85%</td>
+            <td>85%</td>
+            <td>90%</td>
+            <td>85%</td>
+            <td>70%</td>
+            <td>96%</td>
+            <td>85%</td>
+        </tr>
+        <tr class="active-row">
+            <td>Q1 FEBRERO</td>
+            <td>85%</td>
+            <td>85%</td>
+            <td>90%</td>
+            <td>85%</td>
+            <td>70%</td>
+            <td>96%</td>
+            <td>85%</td>
+
+        </tr>
+    </tbody>
+</table>
+
