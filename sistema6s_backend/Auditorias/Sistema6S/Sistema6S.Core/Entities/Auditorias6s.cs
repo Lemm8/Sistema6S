@@ -18,6 +18,7 @@ namespace Sistema6S.Core.Entities
         public int Estado { get; set; }
         public int? CalificacionId { get; set; }
         public int AuditoriaId { get; set; }
+        public int mes { get; set; }
 
         public Areas6s Area { get; set; }
         public Auditores6s Auditor { get; set; }

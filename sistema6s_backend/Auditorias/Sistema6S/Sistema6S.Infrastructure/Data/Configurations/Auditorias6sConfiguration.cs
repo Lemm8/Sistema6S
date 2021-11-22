@@ -41,6 +41,8 @@ namespace Sistema6S.Infrastructure.Data.Configurations
                 .WithMany(p => p.Auditorias6s)
                 .HasForeignKey(d => d.CalificacionId)
                 .HasConstraintName("FK__auditoria__Calif__49C3F6B7");
+
+            builder.Property(e => e.mes).HasColumnType("int");
         }
     }
 }

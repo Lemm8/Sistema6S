@@ -1,6 +1,5 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
 using Sistema6S.Core.Entities;
 using Sistema6S.Infrastructure.Data.Configurations;
 

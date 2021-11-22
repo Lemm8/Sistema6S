@@ -6,7 +6,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Sistema6S.Core.DTOs;
-using Sistema6S.Core.DTOs;
 using AutoMapper;
 using Sistema6S.Core.Entities;
 using Sistema6S.Infrastructure.Data;
@@ -46,12 +45,12 @@ namespace Sistema6S.Api.Controllers
                             auditoriaFechaCompleto = audis.FechaCompleto,
                             auditoriaEstado = audis.Estado,
                             auditorNombre = audes.Nombre,
-                            area = ar.Nombre
+                            area = ar.Nombre,
+                            auditoriaMes = audis.mes
                         };
 
             return Ok(query);
         }
-
 
 
         [HttpGet("{id}")]
@@ -71,5 +70,22 @@ namespace Sistema6S.Api.Controllers
 
             return Ok(auditoria);
         }
+
+        [HttpPut]
+        public async Task<IActionResult> PutAuditoria(Auditorias6s auditoria)
+        {
+            var result = await _repository.UpdateAuditorias(auditoria);
+
+            return Ok(result);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteAuditoria(int id)
+        {
+            var result = await _repository.DeleteAuditoria(id);
+
+            return Ok(result);
+        }
+
     }
 }

@@ -23,18 +23,12 @@ namespace Sistema6S.Infrastructure.Repositories
         {
             // CONEXIÓN CON BD Y RETORNAR LISTA ASÍNCRONA
             var auditorias = await _dbcontext.Auditorias6s.ToListAsync();
-            //var a = _dbcontext.Auditorias6s.FromSql(
-            //    "SELECT ads. from"   
-            //).ToListAsync();
             return auditorias;
         }
 
         public async Task<Auditorias6s> GetAuditoria(int id)
         {
             var auditoria = await _dbcontext.Auditorias6s.FirstOrDefaultAsync(x => x.AuditoriaId == id);
-
-            //var auditoria = await _dbcontext.Auditorias6s.
-            //    Select
             return auditoria;
         }
 
@@ -43,6 +37,30 @@ namespace Sistema6S.Infrastructure.Repositories
             _dbcontext.Auditorias6s.Add(auditoria);
             await _dbcontext.SaveChangesAsync();
         }
+
+        public async Task<bool> UpdateAuditorias(Auditorias6s auditoria)
+        {
+            var currentAuditoria = await GetAuditoria(auditoria.AuditoriaId);
+
+            currentAuditoria.FechaTarget = auditoria.FechaTarget;
+            currentAuditoria.FechaCompleto = auditoria.FechaCompleto;
+            currentAuditoria.Estado = auditoria.Estado;
+            currentAuditoria.CalificacionId = auditoria.CalificacionId;
+
+            int rows = await _dbcontext.SaveChangesAsync();
+            return rows > 0;
+        }
+
+
+        public async Task<bool> DeleteAuditoria(int id)
+        {
+            var currentAuditoria = await GetAuditoria(id);
+            _dbcontext.Auditorias6s.Remove(currentAuditoria);
+
+            int rows = await _dbcontext.SaveChangesAsync();
+            return rows > 0;
+        }
+
 
         public async Task<IEnumerable<Auditores6s>> GetAuditores()
         {

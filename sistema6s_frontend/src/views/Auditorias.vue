@@ -1,6 +1,18 @@
 <template>
     <div class="container">
-        <h2 id="title">Plataforma 6S</h2>            
+        <div>
+            <h2 id="title">Plataforma 6S</h2>
+            <div id="codigo_colores">
+                <h5>Código de colores</h5>
+                <ul>
+                    <li><i class="fa fa-check-circle" aria-hidden="true" style="color: green"></i> Área Auditada</li>
+                    <li><i class="fa fa-check-circle" aria-hidden="true" style="color: red"></i> Auditada fuera de tiempo</li>
+                    <li><i class="fa fa-hourglass-half" aria-hidden="true" style="color: red"></i> Fuera de tiempo</li>
+                    <li><i class="fa fa-hourglass-half" aria-hidden="true" style="color: yellow"></i> Hoy vence</li>
+                </ul>
+            </div>
+        </div>
+        
         <div v-for="auditoria in auditorias_month" :key="auditoria.id">
             <AuditoriaComponente v-bind:auditoria_object = "auditoria" />
         </div>
@@ -115,9 +127,8 @@ export default {
     margin-top: 30px;
     font-weight: bold;
 }
-
-thead {
-    background-color: #00008B;
-    color: #ffffff;
+#codigo_colores {
+    float: right;
+    margin-top: -60px;
 }
 </style>

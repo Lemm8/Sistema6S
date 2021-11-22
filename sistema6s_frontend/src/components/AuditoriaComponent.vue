@@ -67,7 +67,7 @@
                         </td>
 
                         <td> <a href="#"> <i class="fa fa-edit" title="Editar"></i> </a> </td>
-                        <td> <a href="#"> <i class="fa fa-trash" title="Borrar"></i> </a> </td>
+                        <td> <a href="#"> <i @click="deleteAuditoria(auditoria.auditoriaId)" class="fa fa-trash" title="Borrar" ></i> </a> </td>
                     </tr>                
                 </tbody>
             </table>        
@@ -79,11 +79,24 @@
 
 <script>
 
+import axios from 'axios'
+
 export default {
     name: 'Auditorias',
     props: [
         'auditoria_object',
     ],
+    methods: {
+        deleteAuditoria(id){
+            var r = confirm("¿Estás seguro de borrar la auditoría?");
+            if ( r === true ) {
+                axios.delete(`https://localhost:44390/api/auditorias/${id}`)
+                .then( function( response ) {
+                    location.reload();
+                });
+            }            
+        }
+    }
 }
 
 </script>

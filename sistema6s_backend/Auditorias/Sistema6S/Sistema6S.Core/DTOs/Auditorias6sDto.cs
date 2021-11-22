@@ -14,6 +14,7 @@ namespace Sistema6S.Core.DTOs
         public DateTime? FechaTarget { get; set; }
         public DateTime? FechaCompleto { get; set; }
         public int Estado { get; set; }
-        public int AuditoriaId { get; set; }
+        //public int AuditoriaId { get; set; }
+        public int Mes { get; set; }
     }
 }
