@@ -7,54 +7,14 @@
       </v-row>
       <v-row></v-row>
       <v-col>
-        <v-row no-gutters>
+        <v-row>
           <v-col>
-            <template v-for="auditor in info">
-              <v-col
-                :key="auditor.userId">
-                  <v-card
-                    class="card"
-                    elevation="2">
-                    <v-avatar size="70" color="indigo">
-                      <v-icon dark size="70">
-                        mdi-account-circle
-                      </v-icon>
-                    </v-avatar>
-                    <v-card-subtitle>
-                      {{auditor.nombre}}
-                    </v-card-subtitle>
-                  </v-card>
-              </v-col>
-             <v-responsive
-               v-if="auditor.userId === 3"
-                :key="`width-${auditor.userId}`"
-                width="20%"
-             ></v-responsive>
-              </template>
+            <Auditor v-bind:auditores="info"></Auditor>
+          </v-col>
+          <v-col style="width:1rem;">
           </v-col>
           <v-col>
-            <template v-for="auditor in info">
-              <v-col
-                :key="auditor.userId">
-                  <v-card
-                    class="card"
-                    elevation="2">
-                    <v-avatar size="70" color="indigo">
-                      <v-icon dark size="70">
-                        mdi-account-circle
-                      </v-icon>
-                    </v-avatar>
-                    <v-card-subtitle>
-                      {{auditor.nombre}}
-                    </v-card-subtitle>
-                  </v-card>
-              </v-col>
-             <v-responsive
-               v-if="auditor.userId === 3"
-                :key="`width-${auditor.userId}`"
-                width="20%"
-             ></v-responsive>
-              </template>
+            <Auditor v-bind:auditores="info"></Auditor>
           </v-col>
         </v-row>
     </v-col>
@@ -63,20 +23,25 @@
 
 <script>
 import axios from 'axios';
+import Auditor from '../components/Auditor.vue';
   export default {
     name: 'Auditores',
+    components: {
+      'Auditor': Auditor
+    },
 
     data: () => {
       return {
-        info : null
+        info : []
       }
     },
       mounted () {
         axios
           .get('https://localhost:5001/api/auditores')
           .then(response => {
+            console.log(response)
             this.info = response.data
-            console.log(this.info.data)
+            console.log(this.info)
           })
       }
     }
@@ -84,10 +49,14 @@ import axios from 'axios';
 <style>
 .subtitulo {
   text-align: center;
-  
+  font-size: 1.6rem;
+}
+.auditores {
+  margin: 0 auto;
 }
 .titulo {
   text-align: center;
+  font-size: 1.6rem;
   
 }
 .button {
@@ -95,9 +64,5 @@ import axios from 'axios';
 }
 .text-center {
   padding-top: 4rem;
-}
-.card {
-  text-align: center;
-  height: 10rem;
 }
 </style>
