@@ -2,11 +2,16 @@
 <template>
   <v-container>
       <v-row>
-        <v-col class="titulo">Operaciones</v-col>
-        <v-col class="subtitulo">Oficinas</v-col>
+        <v-col class="titulo-pagina">Plataforma 6S</v-col>
       </v-row>
-      <v-row></v-row>
-      <v-col>
+      <v-row no-gutters>
+        <v-col class="titulo">AUDITORES 6S</v-col>
+      </v-row>
+      <v-row>
+        <v-col class="titulo">OPERACIONES</v-col>
+        <v-col class="titulo">OFICINAS</v-col>
+      </v-row>
+      <v-col class="pt-13">
         <v-row>
           <v-col md="20">
             <Auditor v-bind:auditores="info"></Auditor>
@@ -47,16 +52,19 @@ import Auditor from '../components/Auditor.vue';
     }
 </script>
 <style>
-.subtitulo {
-  text-align: center;
-  font-size: 1.6rem;
-}
 .auditores {
   margin: 0 auto;
 }
+.titulo-pagina {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: darkgray;
+  
+}
 .titulo {
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1rem;
   
 }
 .button {
