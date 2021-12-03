@@ -25,7 +25,7 @@
           <div 
             class="validado" 
             v-else
-            >Validado: {{item.auditoriaFechaCompleto}}</div>
+            >Validado: {{item.auditoriaFechaCompleto.split("T")[0]}}</div>
       </v-card>
     </v-flex>
   </v-layout>
@@ -49,13 +49,15 @@ export default{
   padding-top: 0.5rem;
 }
 .en-progreso{
+  font-size: 0.8rem;
+  text-align: center;
   border: 1px solid black;
   background-color: yellow;
   width: 100%;
 }
 .card{
   height: 14rem;
-  width: 20rem;
+  width: 25rem;
   text-align: center;
   border: 1px solid black;
 }
@@ -65,6 +67,8 @@ export default{
   width: 100%;
 }
 .validado{
+  font-size: 0.8rem;
+  text-align: center;
   border: 1px solid black;
   background-color: green;
   width: 100%;
