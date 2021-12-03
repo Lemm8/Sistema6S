@@ -1,9 +1,10 @@
 <template>
   <v-layout row wrap>
-    <v-flex xs10 sm8 md3 lg4 v-for="item in this.auditores " v-bind:key="item.userId" class="container">
+    <v-flex lg4 v-for="item in this.auditores " v-bind:key="item.userId" class="d-flex">
       <v-card
-        class="card"
+        class="card d-flex flex-column"
         style="border: 1px solid black;"
+        rounded="0"
         flat>
         <div 
           class="justify-center card-title"
@@ -17,7 +18,6 @@
             </v-icon>
           </v-avatar>
         </v-responsive>
-          <div>{{item.auditoriaFechaCompleto}}</div>
           <div 
             class="en-progreso" 
             v-if="item.auditoriaFechaCompleto == null"
@@ -48,18 +48,14 @@ export default{
 .avatar{
   padding-top: 0.5rem;
 }
-.container{
-  display: flexbox;
-}
 .en-progreso{
-  margin-top: 1rem;
   border: 1px solid black;
   background-color: yellow;
   width: 100%;
 }
 .card{
-  height: 9.8rem;
-  width: 15rem;
+  height: 14rem;
+  width: 20rem;
   text-align: center;
   border: 1px solid black;
 }

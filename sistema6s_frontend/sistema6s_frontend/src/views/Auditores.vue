@@ -8,12 +8,12 @@
       <v-row></v-row>
       <v-col>
         <v-row>
-          <v-col>
+          <v-col md="16">
             <Auditor v-bind:auditores="info"></Auditor>
           </v-col>
-          <v-col style="width:1rem;">
+          <v-col md="1">
           </v-col>
-          <v-col>
+          <v-col md="16">
             <Auditor v-bind:auditores="info"></Auditor>
           </v-col>
         </v-row>
