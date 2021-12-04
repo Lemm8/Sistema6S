@@ -56,7 +56,7 @@ export default{
   width: 100%;
 }
 .card{
-  height: 14rem;
+  height: 10rem;
   width: 25rem;
   text-align: center;
   border: 1px solid black;
@@ -70,7 +70,7 @@ export default{
   font-size: 0.8rem;
   text-align: center;
   border: 1px solid black;
-  background-color: green;
+  background-color: #D7E4BD;
   width: 100%;
 }
 </style>
