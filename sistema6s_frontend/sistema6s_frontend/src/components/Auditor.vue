@@ -56,7 +56,7 @@ export default{
   width: 100%;
 }
 .card{
-  height: 10rem;
+  height: 9rem;
   width: 25rem;
   text-align: center;
   border: 1px solid black;

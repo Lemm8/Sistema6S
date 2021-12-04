@@ -56,10 +56,12 @@ import Auditor from '../components/Auditor.vue';
   margin: 0 auto;
 }
 .titulo-pagina {
+  padding-top: 4rem;
+  padding-bottom: 1.3rem;
   text-align: center;
   font-weight: bold;
-  font-size: 1.5rem;
-  color: darkgray;
+  font-size: 1.4rem;
+  color: #7F7F7F;
   
 }
 .titulo {
