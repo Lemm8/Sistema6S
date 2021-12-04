@@ -2,6 +2,7 @@
 <template>
   <v-container>
       <v-row>
+        <img src="../assets/6s.png" class="logo" />
         <v-col class="titulo-pagina">Plataforma 6S</v-col>
       </v-row>
       <v-row no-gutters>
@@ -52,12 +53,16 @@ import Auditor from '../components/Auditor.vue';
     }
 </script>
 <style>
+.logo{
+  height: 7rem;
+}
 .auditores {
   margin: 0 auto;
 }
 .titulo-pagina {
-  padding-top: 4rem;
+  padding-top: 2rem;
   padding-bottom: 1.3rem;
+  margin-right: 8rem;
   text-align: center;
   font-weight: bold;
   font-size: 1.4rem;

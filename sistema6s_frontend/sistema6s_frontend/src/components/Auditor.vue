@@ -21,7 +21,7 @@
           <div 
             class="en-progreso" 
             v-if="item.auditoriaFechaCompleto == null"
-            >En progreso</div>
+            >En proceso</div>
           <div 
             class="validado" 
             v-else
